@@ -93,7 +93,9 @@ ks_engine *init_keystone(ks_arch arch, int mode, int syntax) {
         return NULL;
     }
 
-    ks_option(ks, KS_OPT_SYNTAX, syntax);
+    if(arch == KS_ARCH_X86) {
+        ks_option(ks, KS_OPT_SYNTAX, syntax);
+    }
 
     return ks;
 }
