@@ -103,7 +103,7 @@ ks_engine *init_keystone(ks_arch arch, int mode, int syntax) {
 void dump_rawshellcode(unsigned char *shellcode, size_t size) {
     printf("Raw shellcode:\n");
     for (size_t i=0; i<size; i++) {
-        printf("%x", shellcode[i]);
+        printf("%02x", shellcode[i]);
     }
     printf("\n\n");
 
@@ -112,7 +112,7 @@ void dump_rawshellcode(unsigned char *shellcode, size_t size) {
 void dump_escapedshellcode(unsigned char *shellcode, size_t size) {
     printf("Escaped shellcode:\n");
     for (size_t i=0; i<size; i++) {
-        printf("\\x%x", shellcode[i]);
+        printf("\\x%02x", shellcode[i]);
     }
     printf("\n\n");
 }

@@ -4,7 +4,7 @@ This is a simple shellcode assembler that is powered by the [Keystone Assembler 
 
 I created this to have a small utility that I can quickly write some assembly instructions and get them assembled for basic shellcode purposes. I only plan on using this for x86/64, ARM and MIPS but I incorporated support for all architectures supported by keystone.
 
-A statically compiled x64 linux and a x64 windows binary w/ dll are available in `bin/` if you don't wish to build yourself
+A statically compiled x64 linux binary is available in `bin/` if you don't wish to build yourself
 
 ## build
 
